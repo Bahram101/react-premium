@@ -1,0 +1,193 @@
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	margin: 0;
+	color: white;
+}
+
+li {
+	list-style-type: none;
+}
+
+.app {
+	.app-top {
+		background-image: url(../img/bg.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 1095px;
+		position: relative;
+		.overlay {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
+
+			header {
+				margin-top: 30px;
+				.launchApp {
+					width: 128px;
+					height: 28px;
+					color: white;
+					font-weight: 800;
+					background-image: linear-gradient(
+						to top left,
+						#ea4146,
+						#a247e5
+					);
+					border-radius: 10px 10px 10px 2px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.login {
+					padding: 9px 17px;
+					color: #ea4146;
+					font-weight: 700;
+				}
+			}
+			.content-top {
+				margin-top: 98px;
+				h1 {
+					font-size: 62px;
+					font-weight: 900;
+					line-height: 62px;
+					text-align: left;
+					text-transform: uppercase;
+					margin-bottom: 40px;
+					span {
+						color: #ea4146;
+					}
+				}
+				.perform {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 30px;
+					color: #f8f9fa;
+					font-family: 'Nunito Sans';
+					margin-bottom: 50px;
+					span {
+						font-weight: 700;
+					}
+				}
+				.standard,
+				.premium {
+					font-size: 30px;
+					font-weight: 900;
+					line-height: 30px;
+					margin-bottom: 30px;
+					.firstWord {
+						text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+						text-transform: uppercase;
+					}
+					.valued {
+						color: rgba(255, 255, 255, 0.3);
+					}
+					.winner {
+						font-size: 20px;
+						line-height: 20px;
+					}
+				}
+				.start-contest {
+					font-size: 30px;
+					font-weight: 900;
+					text-transform: uppercase;
+					margin-bottom: 120px;
+				}
+			}
+			.content-bottom {
+				.col-lg-7 {
+					background: #132656;
+					box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+					border-radius: 10px;
+					padding: 46px 49px;
+					width: 54%;
+					margin-bottom: 106px;
+					.contest-details {
+						h1 {
+							font-size: 30px;
+							font-weight: 900;
+							line-height: 30px;
+							text-transform: uppercase;
+							margin-bottom: 24px;
+						}
+						ul {
+							padding-left: 25px;
+							li {
+								color: #ced4da;
+								position: relative;
+								&:before {
+									content: '';
+									position: absolute;
+									width: 5px;
+									height: 5px;
+									background: #ced4da;
+									left: -15px;
+									top: 8px;
+									border-radius: 50%;
+								}
+							}
+						}
+						.buttons {
+							.start-contest {
+								background: linear-gradient(
+									140.22deg,
+									#a247e5 11.43%,
+									#ea4146 77.29%
+								);
+								border-radius: 10px 10px 10px 2px;
+								color: white;
+								border: none;
+								padding: 9px 17px;
+								margin-right: 10px;
+							}
+							.plans {
+								background: #132656;
+								box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+								border-radius: 10px;
+								border:none;
+								border:1px solid white;
+								color:white;
+								width:130px;
+								border-radius:10px 10px 10px 0;
+								padding: 9px 0;
+								height: 42px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.app-bottom{
+		background: #112148;
+		height: 350px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+	.content-top {
+		h1 {
+			font-size: 61px !important;
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.content-top {
+		h1 {
+			font-size: 51px !important;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.content-top {
+		h1 {
+			font-size: 38px !important;
+		}
+	}
+}
